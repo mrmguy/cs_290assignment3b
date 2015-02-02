@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaTest</title>
+<script type="text/javascript" src='assignment3jv.js'></script>
+</head>
+<body>
+<div id="testor"></div>
+<form>
+		<fieldset>
+			<legend>List of recent gists from Github</legend>
+			<label>Select between 1 and 5 pages of results:
+				<input type="number" name="numerical_input" min = "1" max = "5"/>
+			</label>
+			<br />
+			<p>Select languages: <br />
+				<label><input type="checkbox" name="language" value="Python"/>Python</label><br />
+				<label><input type="checkbox" name="language" value="JSON"/>JSON</label><br />
+				<label><input type="checkbox" name="language" value="Javascript"/>Javascript</label><br />
+				<label><input type="checkbox" name="language" value="SQL"/>SQL</label><br />
+			</p>
+			<input type="button" value="Search" onclick = "saveEntry()"/>
+		</fieldset>
+	</form>
+<section>
+	<h1>Search results</h1>
+	<ul id = "gist_listings"></ul>
+</section>
+<section>
+	<h1>Favorites</h1>
+  <ul id = "favorite_list"></ul>
+</section>
+</body>
+</html>
